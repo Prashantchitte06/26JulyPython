@@ -1,3 +1,5 @@
+from itertools import count
+
 print("-----1.1: basic example EH------")
 a=10
 b=2
@@ -96,8 +98,33 @@ except ZeroDivisionError:
 except Exception as e:
    print("Generic Exception handled")
    print(e)
+print("program ended")
 
 
+print("-----------5: Alternative way of using Generic exception-----------")
+a=10
+b=0
+
+print("program started")
+try:
+   print(a/b)
+except:
+   print("Generic exception handled")
+print("program ended")
+
+
+
+print("-----------6: finally block-----------")
+a=10
+b=0
+
+print("program started")
+try:
+   print(a/b)
+except:
+   print("Generic exception handled")
+finally:
+   print("Running finally block")
 print("program ended")
 
 
